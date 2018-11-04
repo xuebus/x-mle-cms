@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{:$lang['common']['web_title']:} - Powered by mlecms</title>
+<link rel="stylesheet" type="text/css" href="../inc/templates/manage/css/common_{:$admin['theme']:}.css" />
+<script type="text/javascript" src="../inc/script/jquery.js"></script>
+<script type="text/javascript" src="../inc/templates/manage/js/common.js"></script>
+<style type="text/css">
+.center_top{border-bottom:1px #CCC solid; height:30px; padding:0 0 0 10px; font-weight:bold; background:url(../inc/templates/manage/images/content_box_bg.gif) #F6F6F6; width:100%;}
+.center{margin:10px auto;}
+.center .news{width:100%;}
+.center .news .news_top{border-bottom:1px #CCC solid; height:30px; padding:0 0 0 10px; font-weight:bold; background:url(../inc/templates/manage/images/content_box_bg.gif) #F6F6F6; width:100%;}
+.center .news .row{padding:5px 10px 15px 10px;}
+.center .news .row table{width:100%;}
+.center .news .row table td{height:30px; line-height:30px; background:url(../inc/templates/manage/images/0101.gif) repeat-x bottom; padding:0 0 0 10px;}
+.center .news .row table td a:hover{color:#F00; text-decoration:underline;}
+.welcome{padding:0 10px;}
+.welcome td{word-break:break-all;} /* 防止禁用的函数过多导致表格变形 */
+.server td{height:30px; line-height:30px; padding:0 0 0 10px;}
+.attention,.information{margin:0 0 10px 0;}
+.attention a,.information a{text-decoration:underline; color:#F00;}
+</style>
+</head>
+<body>
+{:include file='component_header.dwt':}
+<div id="body_box">
+	<table cellpadding="0" cellspacing="0" border="0" class="icon">
+		<tr><td>{:$mle['icon']:}</td></tr>
+	</table>
+	<div class="rounded table">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="box_top">
+			<tr>
+				<td class="title">{:$lang['page'][0]:}</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="error rounded top_error hide" id="client_security"></div>
+		<table class="table center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="top">
+					<table cellpadding="0" cellspacing="1" border="0" width="100%" class="rounded">
+						<tr>
+						<tr>
+							<td class="center_top">{:$lang['page'][38]:}</td>
+						</tr>
+						<td class="welcome">
+								<table cellpadding="0" cellspacing="0" border="0" class="server" width="100%">
+									<tr><td>{:$lang['page'][12]|cat:$mle['session']['admin']['login']['username']|cat:$lang['page'][13]:}<a href="login.php?action=logout">{:$lang['page'][14]:}</a></td></tr>
+									<tr><td>{:$lang['page'][15]:}{:if $mle['session']['admin']['login']['level'] == 1:}{:$lang['page'][16]:}{:else:}{:$lang['page'][17]:}{:/if:} &nbsp;&nbsp;&nbsp; {:$lang['page'][18]:}<span class="red">{:$mle['session']['admin']['login']['frequency']:}</span>{:$lang['page'][19]:}</td></tr>
+									{:if $mle['session']['admin']['login']['logintime'][2] > 1:}<tr><td>
+									{:$lang['page'][42]:}{:'Y-m-d H:i:s'|date:$mle['session']['admin']['login']['logintime'][2]:} , {:$mle['session']['admin']['login']['loginaddress'][2]:}
+									{:/if:}</td></tr>
+									{:if $mle['session']['admin']['login']['logintime'][1] > 1:}<tr><td>
+									{:$lang['page'][20]:}{:'Y-m-d H:i:s'|date:$mle['session']['admin']['login']['logintime'][1]:} , {:$mle['session']['admin']['login']['loginaddress'][1]:}
+									{:/if:}</td></tr>
+									{:if $mle['session']['admin']['login']['logintime'][0] > 1:}<tr><td>
+									{:$lang['page'][20]:}{:'Y-m-d H:i:s'|date:$mle['session']['admin']['login']['logintime'][0]:} , {:$mle['session']['admin']['login']['loginaddress'][0]:}
+									</td></tr>{:/if:}
+									<tr><td>{:$lang['page'][21]:}MLECMS {:$mle['version']:} {:$mle['edition']:} ({:$mle['release']:})
+									<span class="green">{:if $mle['authorization']:}{:$lang['page']['22']:}{:else:}{:$lang['page']['23']:}{:/if:}</span></td></tr>
+									<tr><td>{:$lang['page']['24']:}<span id="mle_new_version"><img src="../inc/templates/manage/images/wait.gif" width="16" height="16" border="0" /></span></td></tr>
+									<tr><td>Smarty Version：<a target="_blank" href="http://www.smarty.net/">{:$mle['smarty_version']:}</a></td></tr>
+									<tr><td>jQuery Version：<a target="_blank" href="http://www.jquery.com/"><script type="text/javascript">document.write($.fn.jquery)</script></a></td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table cellpadding="0" cellspacing="1" border="0" width="100%" class="rounded" style="margin:10px 0;">
+						<tr>
+							<td class="center_top">{:$lang['page'][25]:}</td>
+						</tr>
+						<tr>
+							<td class="welcome">
+								<table cellpadding="0" cellspacing="0" border="0" class="server" width="100%">
+									<tr></tr>
+									<tr><td>{:$lang['page'][26]:}{:$mle['SERVER']['SERVER_SOFTWARE']:} &nbsp; <a target="_blank" href="app.php?a=phpinfo">{:$lang['page'][27]:}</a></td></tr>
+									<tr><td>{:$lang['page'][28]:}{:$mle['PHP_VERSION']:}</td></tr>
+									<tr><td>{:$lang['page'][29]:}{:$mle['MySQL_VERSION']:}</td></tr>
+									<tr><td>{:$lang['page'][30]:}{:$mle['gd_info']:}</td></tr>
+									<tr><td>{:$lang['page'][32]:}{:$mle['upload_max']:}</td></tr>
+									<tr><td>{:$lang['page'][33]:}{:$mle['post_max']:}</td></tr>
+									<tr><td>{:$lang['page'][34]:}{:$mle['script_file']:}</td></tr>
+									<tr><td>{:$lang['page'][35]:}{:$mle['zend']:}</td></tr>
+									<tr><td>{:$lang['page'][36]:}{:$mle['disable_functions']:}</td></tr>
+								</table>								
+							</td>
+						</tr>
+					</table>
+					{:if !$mle['authorization']:}<div class="information rounded"><ol></ol>{:$lang['page'][37]:}</div>{:/if:}
+				</td>
+				<td width="10"></td>
+				<td width="280" valign="top">
+					<table class="news rounded" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td class="news_top" colspan="2">{:$lang['page'][1]:}</td>
+						</tr>
+						<tr>
+							<td class="row">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td><a href="member_manage.php">{:$lang['page'][3]:}{:$mle['count']['members']:}</a></td>
+										<td width="10"></td>
+										<td><a href="article_manage.php">{:$lang['page'][4]:}{:$mle['count']['article']:}</a></td>
+									</tr>
+									<tr>
+										<td><a href="product_manage.php">{:$lang['page'][5]:}{:$mle['count']['product']:}</a></td>
+										<td></td>
+										<td><a href="picture_manage.php">{:$lang['page'][6]:}{:$mle['count']['picture']:}</a></td>
+									</tr>
+									<tr>
+										<td><a href="download_manage.php">{:$lang['page'][7]:}{:$mle['count']['download']:}</a></td>
+										<td></td>
+										<td><a href="guestbook_manage.php">{:$lang['page'][8]:}{:$mle['count']['guestbook'][0]:}/{:if $mle['count']['guestbook'][1] > 0:}<span class="red">{:$mle['count']['guestbook'][1]:}</span>{:else:}{:$mle['count']['guestbook'][1]:}{:/if:}</a></td>
+									</tr>
+									{:if module::is_install('PL012x'):}<!-- /// 评论插件是否安装 -->
+									<tr>
+										<td><a href="comment_manage.php?type=1&audit=2">{:$lang['page'][43]:}{:$mle['count']['comment'][1][0]:}</a></td>
+										<td></td>
+										<td><a href="comment_manage.php?type=1&audit=0">{:$lang['page'][44]:}{:if $mle['count']['comment'][1][1] > 0:}<span class="red">{:$mle['count']['comment'][1][1]:}</span>{:else:}{:$mle['count']['comment'][1][1]:}{:/if:}</a></td>
+									</tr>
+									<tr>
+										<td><a href="comment_manage.php?type=2&audit=2">{:$lang['page'][45]:}{:$mle['count']['comment'][2][0]:}</a></td>
+										<td></td>
+										<td><a href="comment_manage.php?type=2&audit=0">{:$lang['page'][44]:}{:if $mle['count']['comment'][2][1] > 0:}<span class="red">{:$mle['count']['comment'][2][1]:}</span>{:else:}{:$mle['count']['comment'][2][1]:}{:/if:}</a></td>
+									</tr>
+									<tr>
+										<td><a href="comment_manage.php?type=3&audit=2">{:$lang['page'][46]:}{:$mle['count']['comment'][3][0]:}</a></td>
+										<td></td>
+										<td><a href="comment_manage.php?type=3&audit=0">{:$lang['page'][44]:}{:if $mle['count']['comment'][3][1] > 0:}<span class="red">{:$mle['count']['comment'][3][1]:}</span>{:else:}{:$mle['count']['comment'][3][1]:}{:/if:}</a></td>
+									</tr>
+									<tr>
+										<td><a href="comment_manage.php?type=4&audit=2">{:$lang['page'][47]:}{:$mle['count']['comment'][4][0]:}</a></td>
+										<td></td>
+										<td><a href="comment_manage.php?type=4&audit=0">{:$lang['page'][44]:}{:if $mle['count']['comment'][4][1] > 0:}<span class="red">{:$mle['count']['comment'][4][1]:}</span>{:else:}{:$mle['count']['comment'][4][1]:}{:/if:}</a></td>
+									</tr>
+									{:/if:}
+									<tr>
+										<td colspan="3">
+											<a href="log.php">{:$lang['page'][9]:}{:if $mle['count']['un_log'] > 1000:}<span class="red">{:$mle['count']['un_log']:}</span>{:else:}{:$mle['count']['un_log']:}{:/if:}</a>
+											{:if $mle['count']['un_log'] > 1000:} &nbsp;&nbsp;&nbsp;<a href="index.php?action=unlog" class="red">{:$lang['page'][11]:}</a>{:/if:}
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<a href="index.php?action=clear">{:$lang['page'][40]:}</a>
+											<img src="../inc/templates/manage/images/operation/help.png" width="16" height="16" class="title2div" title="{:$lang['page'][41]:}">
+										</td>
+									</tr>
+									<!--
+									<tr>
+										<td colspan="3">
+											{:$lang['page'][10]:}<span class="red">{:$mle['count']['un_tmp']:}</span>
+											{:if $mle['count']['un_tmp'] > 0:}&nbsp;&nbsp;&nbsp;<a href="index.php?action=untmp">{:$lang['page'][11]:}</a>{:/if:}
+										</td>
+									</tr>
+									-->
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table class="news rounded" style="margin:10px auto;" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td class="news_top">{:$lang['page'][2]:}</td>
+						</tr>
+						<tr>
+							<td id="client_news" class="row"><img src="../inc/templates/manage/images/loading.gif" width="32" height="32" style="margin:50px auto 50px 120px;" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	{:include file='component_footer.dwt':}
+</div>
+<script type="text/javascript">
+$('.server tr:odd').addClass('odd'); $('.server tr:even').addClass('even');
+mle.title2div('title2div');	
+</script>
+</body>
+</html>

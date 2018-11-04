@@ -1,0 +1,109 @@
+@charset "utf-8";
+body,ul,ol,ul,li,form,img,div{outline:0; margin:0; padding:0; list-style:none; border:0; outline:0;}
+body{color:#333; font-size:12px; background:url(../images/comment_body_bg.png) repeat-x #eaf0f6; padding:30px 0;}
+.spacing{height:8px; clear:both; font-size:1px;}
+.rounded{-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.hide{display:none;}
+.locking{left:0px; width:100%; display:none; height:100%; top:0; position:absolute; background:#999; filter:alpha(opacity=70);	-moz-opacity:0.7; opacity:0.7;	z-index:999;} /* 点击回复后创建的锁定层 */
+a{color:#0B3B8C;}
+
+.head{width:1000px; height:86px; margin:0 auto; background:url(../images/comment_head_bg.gif) 0 0 no-repeat;}
+.head .title{height:86px; overflow:hidden; padding:0 20px; line-height:86px; font-size:22px; word-break:break-all; text-align:center; color:#0B3B8C;}
+.head .title a{color:#0B3B8C; text-decoration:none;}
+.head .title a:hover{color:#F00; text-decoration:underline;}
+.head .title .view{color:#C00; font-size:12px;}
+
+.frame{width:998px; margin:0 auto; border-left:1px #BBCEE4 solid; border-right:1px #BBCEE4 solid; background:#FFF;  overflow:hidden;}
+.frame .main{float:left; width:680px; padding:0 0 20px 20px; margin:0 8px; border:1px #DDD solid; overflow:hidden; display:inline;}
+
+.frame .main .list{overflow:hidden; padding:0 20px 0 0;}
+.frame .main .list .data{overflow:hidden; clear:both;}
+.frame .main .list .data .image{float:left; width:60px; height:}
+.frame .main .list .data .image img{width:48px; height:48px; border:0; padding:2px; border:1px #DDD solid;}
+.frame .main .list .data .info{float:left; overflow:hidden; width:600px;}
+.frame .main .list .data .info .top_misc{height:20px; overflow:hidden; padding:0 0 8px 0;}
+.frame .main .list .data .info .top_misc .a{float:left; height:20px; line-height:20px; color:#0B3B8C; overflow:hidden; padding:0 10px 0 0;}
+.frame .main .list .data .info .top_misc .a a{color:#0B3B8C;}
+.frame .main .list .data .info .top_misc .b{float:left; height:20px; line-height:20px; color:#666;}
+.frame .main .list .data .info .top_misc .c{float:right; height:20px; line-height:20px; color:#666; font-family:Arial,Helvetica,sans-serif;}
+.frame .main .list .data .info .content .current_content{line-height:22px; font-size:14px; overflow:hidden; word-break:break-all;}
+
+/* 回复框架，有回复内容时启用 */
+.frame .main .list .data .info .content .reply_frame{overflow:hidden; padding:0 0 10px 0;}
+.frame .main .list .data .info .content .reply_frame .reply_box{overflow:hidden; padding:3px; border:1px #CCC solid; background:#FFFFEE; clear:both;}
+.frame .main .list .data .info .content .reply_frame .reply_box .top_misc{overflow:hidden; padding:8px;}
+.frame .main .list .data .info .content .reply_frame .reply_box .reply_content{line-height:22px; font-size:14px; overflow:hidden; padding:0 8px 8px 8px; word-break:break-all;}
+.frame .main .list .data .info .content .reply_frame .reply_box .reply_misc{padding:0 10px 5px 0; text-align:right; overflow:hidden;}
+.frame .main .list .data .info .content .reply_frame .reply_box .reply_misc span{color:#C00;}
+.frame .main .list .data .info .content .reply_frame .reply_box .reply_misc a{color:#0B3B8C; text-decoration:none;}
+.frame .main .list .data .info .content .reply_frame .reply_box .reply_misc a:hover{color:#C00; text-decoration:underline;}
+
+.frame .main .list .data .info .bottom_misc{padding:15px 10px 0 0; text-align:right; overflow:hidden;}
+.frame .main .list .data .info .bottom_misc span{color:#C00;}
+.frame .main .list .data .info .bottom_misc a{color:#0B3B8C; text-decoration:none;}
+.frame .main .list .data .info .bottom_misc a:hover{color:#C00; text-decoration:underline;}
+.frame .main .list .interval_top{height:15px; font-size:1px; clear:both;}
+.frame .main .list .interval_bottom{height:15px; font-size:1px; background:url(../images/dotted.gif) 0 bottom repeat-x; clear:both;}
+
+.frame .main .list .nodata{height:200px; line-height:200px; text-align:center; font-size:14px;}
+
+.frame .main .reply_title{overflow:hidden; padding:20px 0 0 0;}
+.frame .main .reply_title ol{float:left; height:30px; overflow:hidden;}
+.frame .main .reply_title ol a{color:#333; text-decoration:none;}
+.frame .main .reply_title ol a:hover{color:#666;}
+.frame .main .reply_title .a{width:20px; background:url(../images/comment_bt_line.gif) 0 0 repeat-x;}
+.frame .main .reply_title .b{width:94px; line-height:30px; font-size:14px; background:url(../images/comment_bt_bg2.gif) 0 0 no-repeat; text-align:center;}
+.frame .main .reply_title .c{width:93px; line-height:30px; font-size:14px; background:url(../images/comment_bt_bg2.gif) -1px 0 no-repeat; text-align:center;}
+.frame .main .reply_title .current{background-image:url(../images/comment_bt_bg1.gif); font-weight:bold;}
+.frame .main .reply_title .current a{font-weight:bold;}
+.frame .main .reply_title .d{width:362px; padding:0 15px 0 0; line-height:38px; text-align:right; overflow:hidden; background:url(../images/comment_bt_line.gif) 0 0 repeat-x;}
+.frame .main .reply_title .d span{color:#C00;}
+.frame .main .reply_title .e{width:320px; padding:3px 0 0 225px; overflow:hidden; background:url(../images/comment_bt_line.gif) 0 0 repeat-x;}
+
+.frame .main .reply{width:646px; border:1px #CCC solid; margin:10px 0 0 0; padding:10px 0 10px 10px; overflow:hidden; background:#F8FCFF;}
+.frame .main .reply .close{width:17px; height:17px; overflow:hidden; position:absolute; margin:-12px auto auto 630px;} /* 关闭 */
+.frame .main .reply .close a{display:block; width:7px; height:7px; padding:5px;}
+.frame .main .reply .already_logged{height:32px; line-height:32px; padding:0 0 0 20px;}
+.frame .main .reply .already_logged a{color:#0B3B8C;}
+.frame .main .reply .login_form{clear:both;}
+.frame .main .reply .login_form ol{float:left; height:30px; overflow:hidden;}
+.frame .main .reply .login_form .ctext{line-height:30px;}
+.frame .main .reply .login_form .cinput{padding:2px 10px 0 0;}
+.frame .main .reply .login_form .cinput input{width:120px; height:18px; line-height:18px; padding:3px 5px; font-size:14px; margin:0; color:#06F; border:1px #CCC solid; outline:none;}
+.frame .main .reply .login_form .button{padding:1px 0 0 0; overflow:hidden; width:85px;}
+
+.frame .main .reply .ccontent{clear:both;}
+.frame .main .reply .ccontent ul{overflow:hidden;}
+.frame .main .reply .ccontent ul li{}
+.frame .main .reply .ccontent ul .a{float:left; height:30px; width:80px; padding:10px 0;}
+.frame .main .reply .ccontent ul .b{float:left; height:30px; line-height:30px; padding:10px 0; overflow:hidden;}
+.frame .main .reply .ccontent ul .c{float:right; height:30px; line-height:20px; padding:10px 0; overflow:hidden; color:#999;}
+.frame .main .reply .ccontent ul textarea{width:615px; padding:8px; height:90px; outline:none; border:1px #CCC solid; font-size:14px; color:#999; background:url(../images/logo_textarea_bg.gif) center center no-repeat #FFF; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+
+.frame .sidebar{float:left; width:272px; overflow:hidden;}
+.frame .sidebar .title{height:30px; line-height:30px; font-size:14px; padding:0 0 0 8px; background:url(../images/comment_sidebar_title_bg.gif) 0 0 repeat-x; border-top:1px #DDD solid; border-left:1px #DDD solid; border-right:1px #DDD solid;}
+.frame .sidebar .list{padding:0 10px; overflow:hidden; border-left:1px #DDD solid; border-right:1px #DDD solid; border-bottom:1px #DDD solid; background:#F3F8FE;}
+.frame .sidebar .list ul{clear:both; height:44px; padding:3px 0; overflow:hidden;}
+.frame .sidebar .list .topline{background:url(../images/dotted.gif) 0 top repeat-x;}
+.frame .sidebar .list ul .a{float:left; width:44px; height:44px; line-height:44px; font-size:22px; font-family:Arial, Helvetica, sans-serif; color:#CCC; text-align:center;}
+.frame .sidebar .list ul .b{height:50px; line-height:22px; overflow:hidden;}
+.frame .sidebar .list ul .b a{color:#0B3B8C; text-decoration:none;}
+.frame .sidebar .list ul .b a:hover{color:#BC2D09; text-decoration:underline;}
+.frame .sidebar .list ul .b span{color:#666;}
+
+.footer{width:960px; height:40px; padding:39px 0 0 40px; color:#666; margin:0 auto; background:url(../images/comment_footer_bg.gif) 0 0 no-repeat;}
+
+.copyright{line-height:22px; overflow:hidden; color:#666; text-align:center;}
+.copyright a{color:#666; text-decoration:none;}
+
+/* component_page_style */
+.page_style{height:25px; margin:20px auto;}
+.page_style a{text-decoration:none;}
+.page_style td{float:left; height:22px; line-height:22px;}
+.page_style .effective a{height:22px; line-height:22px; padding:0 8px; color:#333; display:block; text-align:center; border:1px #DDD solid; background:#F9F9F9; width:40px;}
+.page_style .invalid{text-align:center; padding:0 8px; border:1px #DDD solid; color:#999; background:#F9F9F9; width:40px;}
+.page_style .interval{width:5px; font-size:1px; overflow:hidden;}
+.page_style .numeric{font-family:arial,helvetica,sans-serif;}
+.page_style .numeric a{display:block; padding:0 8px; border:1px #DDD solid; color:#333; background:#F9F9F9; font-family:arial,helvetica,sans-serif;}
+.page_style .numeric a:hover{color:#F00; border:1px #EE7700 solid; background:#FFEEDD; text-decoration:none;}
+.page_style .current,.page_style .effective a:hover{color:#F00; border:1px #EE7700 solid; background:#FFEEDD; padding:0 8px; text-decoration:none;}

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{:$lang['common']['web_title']:} - Powered by mlecms</title>
+<link rel="stylesheet" type="text/css" href="../inc/templates/manage/css/common_{:$admin['theme']:}.css" />
+<script type="text/javascript" src="../inc/script/jquery.js"></script>
+<script type="text/javascript" src="../inc/templates/manage/js/common.js"></script>
+<script type="text/javascript">
+function check(){
+	var key = $('#word').val();
+	if(key == '' || key == "{:$lang['page']['keyword']:}"){
+		alert("{:$lang['page']['enter_keywords']:}");
+		return false;		
+	} else {
+		return true;	
+	}
+}
+$(function(){
+	mle.alternately('list');
+	mle.title2div('title2div');
+	mle.keysubmit('search_form','search','check()'); // 搜索
+	mle.acsubmit('manage','audit','{:$lang['page']['volume'][3]:}','audit',false);
+	mle.acsubmit('manage','unaudit','{:$lang['page']['volume'][4]:}','unaudit',false);
+	mle.acsubmit('manage','del','{:$lang['page']['volume'][5]:}','del',false);
+});
+</script>
+<style type="text/css">.title_div{width:350px;}</style>
+</head>
+<body>
+{:include file='component_header.dwt':}
+<div id="body_box">
+	<table cellpadding="0" cellspacing="0" border="0" class="icon">
+		<tr><td>{:$mle['icon']:}</td></tr>
+	</table>
+	<div class="rounded table">
+		<form action="" method="get" name="search_form" id="search_form">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="box_top">
+			<tr>
+				<td class="title">{:$lang['page']['title']:}</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td><select class="select rounded" onChange="window.open(this.options[this.selectedIndex].value,'_self')" size="1">{:$mle['option']['type']:}</select></td>
+							<td><select class="select rounded" onChange="window.open(this.options[this.selectedIndex].value,'_self')" size="1">{:$mle['option']['audit']:}</select></td>
+							<td><select class="select rounded" onChange="window.open(this.options[this.selectedIndex].value,'_self')" size="1">{:$mle['option']['sort']:}</select></td>
+							<td>
+								<input type="hidden" name="audit" value="{:$mle['gets']['audit']:}" />
+								<input type="hidden" name="type" value="{:$mle['gets']['type']:}" />
+								<input type="hidden" name="sort" value="{:$mle['gets']['sort']:}" />
+								<input type="hidden" name="uid" value="{:$mle['gets']['uid']:}" />
+								<input type="hidden" name="aid" value="{:$mle['gets']['aid']:}" />
+								<input type="text" class="input rounded" name="word" id="word" size="15" onfocus="if(this.value=='{:$lang['page']['keyword']:}'){this.value='';}" onblur="if(this.value==''){this.value='{:$lang['page']['keyword']:}';}" value="{:if $mle['gets']['word']:}{:$mle['gets']['word']:}{:else:}{:$lang['page']['keyword']:}{:/if:}" />
+								<input type="text" style="display:none;" /> 
+							</td>
+							<td><a class="button_2" href="#" id="search">{:$lang['common']['search']:}</a></td>
+							<td><a class="button_2" href="comment_manage.php?type={:$mle['gets']['type']:}&{:rand():}">{:$lang['common']['refresh']:}</a></td>
+							<td><a class="button_4" onClick="return confirm('{:$lang['page']['operation'][4]:}');" href="comment_manage.php?type={:$mle['gets']['type']:}&action=auditall">{:$lang['page']['all_audit']:}</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		</form>
+		
+		<form action="" method="post" name="manage" id="manage">
+		<table class="list td_align" cellpadding="0" cellspacing="1" border="0">
+			<tr>
+				<td class="field_head" width="30">{:$lang['page']['head'][0]:}</td>
+				<td class="field_head" width="25">{:$lang['page']['head'][1]:}</td>
+				<td class="field_head">{:$lang['page']['head'][2]:}</td>
+				<td class="field_head">{:$lang['page']['head'][3]:}</td>
+				<td class="field_head">{:$lang['page']['head'][4]:}</td>
+				<td class="field_head">{:$lang['page']['head'][5]:}</td>
+				<td class="field_head">{:$lang['page']['head'][6]:}</td>
+				<td class="field_head">{:$lang['page']['head'][7]:}</td>
+			</tr>
+			{:foreach $mle['list'] as $n:}
+			<tr>
+				<td><input name="id[]" type="checkbox" value="{:$n['id']:}" /></td>
+				<td>{:$n['id']:}</td>
+				<td style="text-align:left;"><a title="{:$lang['page']['filter'][1]:}" href="comment_manage.php?type={:$n['type']:}&aid={:$n['aid']:}">{:$n['title_format']:}</a> <font color="#FF0000">({:$n['commenttotal']:})</font></td>
+				<td><a title="{:$lang['page']['filter'][1]:}" href="comment_manage.php?type={:$n['type']:}&uid={:$n['user']:}">{:$n['nickname']:}</a></td>
+				<td><a title="{:$lang['page']['filter'][2]:}" href="comment_manage.php?type={:$n['type']:}&word={:$n['ip']:}">{:$n['address']:}</a></td>
+				<td>{:$n['addtime']:}</td>
+				<td style="text-align:left;"><a target="_blank" href="../comment.php?type={:$n['type']:}&id={:$n['aid']:}" class="title2div" title="{:$n['content']:}">{:$n['cut_content']:}</a><font color="#FF0000">({:$n['agree']:})</font></td>
+				<td class="operation">
+					{:if $n['audit'] == 1:}
+					<a href="comment_manage.php?audit={:$mle['gets']['audit']:}&type={:$mle['gets']['type']:}&word={:$mle['gets']['word']:}&sort={:$mle['gets']['sort']:}&uid={:$mle['gets']['uid']:}&aid={:$mle['gets']['aid']:}&page={:$mle['gets']['page']:}&action=unaudit&id={:$n['id']:}"><img title="{:$lang['page']['operation'][0]:}" src="../inc/templates/manage/images/operation/accept.png" title="{:$lang['page']['volume'][0]:}" /></a>
+					{:else:}
+					<a href="comment_manage.php?audit={:$mle['gets']['audit']:}&type={:$mle['gets']['type']:}&word={:$mle['gets']['word']:}&sort={:$mle['gets']['sort']:}&uid={:$mle['gets']['uid']:}&aid={:$mle['gets']['aid']:}&page={:$mle['gets']['page']:}&action=audit&id={:$n['id']:}"><img title="{:$lang['page']['operation'][1]:}" src="../inc/templates/manage/images/operation/ban.png" title="{:$lang['page']['volume'][1]:}" /></a>
+					{:/if:}
+					<a href="comment_manage.php?audit={:$mle['gets']['audit']:}&type={:$mle['gets']['type']:}&word={:$mle['gets']['word']:}&sort={:$mle['gets']['sort']:}&uid={:$mle['gets']['uid']:}&aid={:$mle['gets']['aid']:}&page={:$mle['gets']['page']:}&action=del&id={:$n['id']:}" onClick="return confirm('{:$lang['page']['operation'][3]:}');"><img title="{:$lang['page']['operation'][2]:}" src="../inc/templates/manage/images/operation/delete.png" title="{:$lang['page']['volume'][2]:}" /></a>
+				</td>
+			</tr>
+			{:foreachelse:}<tr><td colspan="8" class="field_head">{:$lang['page']['no_data']:}</td></tr>
+			{:/foreach:}
+		</table>
+		<table class="table top_line">
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td class="all_action"><input name="all" id="all" type="checkbox" onclick="mle.select_all(this.form);" /></td>
+							<td> &nbsp{:$lang['page']['select_all']:} &nbsp;</td>
+							<td class="operation">
+								<input type="hidden" name="action" id="action" value="" />
+								<a href="javascript:void(0);"><img id="audit" src="../inc/templates/manage/images/operation/accept.png" title="{:$lang['page']['volume'][0]:}" /></a>
+								<a href="javascript:void(0);"><img id="unaudit" src="../inc/templates/manage/images/operation/ban.png" title="{:$lang['page']['volume'][1]:}" /></a>
+								<a href="javascript:void(0);"><img id="del" src="../inc/templates/manage/images/operation/delete.png" title="{:$lang['page']['volume'][2]:}" /></a>
+							</td>					
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>		
+		</form>
+		{:$mle['page']:}
+		<!--
+		{:if $admin['attention']:}<div class="attention rounded"><ol></ol>注意</div>{:/if:}
+		{:if $admin['information']:}<div class="information rounded"><ol></ol>消息</div>{:/if:}
+		-->
+	</div>
+	{:include file='component_footer.dwt':}
+</div>
+</body>
+</html>

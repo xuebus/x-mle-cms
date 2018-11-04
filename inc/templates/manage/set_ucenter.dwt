@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{:$lang['common']['web_title']:} - Powered by mlecms</title>
+<link rel="stylesheet" type="text/css" href="../inc/templates/manage/css/common_{:$admin['theme']:}.css" />
+<script type="text/javascript" src="../inc/script/jquery.js"></script>
+<script type="text/javascript" src="../inc/templates/manage/js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+	mle.alternately('list');
+	mle.title2div('title2div');
+	mle.keysubmit('form','submit',true);
+});
+</script>
+</head>
+<body>
+{:include file='component_header.dwt':}
+<div id="body_box">
+	<table cellpadding="0" cellspacing="0" border="0" class="icon">
+		<tr><td>{:$mle['icon']:}</td></tr>
+	</table>
+	<div class="rounded table">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="box_top">
+			<tr>
+				<td class="title">{:$lang['page']['title']:}</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		{:if $mle['ucini']['enabled']:}
+			{:if $mle['status']['result'] == 'success':}
+				<div class="success rounded" style="margin:10px 10px 0 10px;"><ol></ol>{:$mle['status']['info']:}</div>
+			{:elseif $mle['status']['result'] == 'failure':}
+				<div class="error rounded" style="margin:10px 10px 0 10px;"><ol></ol><span>{:$mle['status']['info']:}</span></div>
+			{:/if:}
+		{:/if:}
+		<form action="" method="post" name="form" id="form">
+		<table class="list" cellpadding="0" cellspacing="1" border="0">
+			<tr>
+				<td class="name">{:$lang['page']['field']['enabled'][0]:}</td>
+				<td>
+					<input name="enabled" type="radio" value="1" {:if $mle['ucini']['enabled'] == true:}checked{:/if:} /> {:$lang['page']['field']['enabled'][1]:} &nbsp; &nbsp;
+					<input name="enabled" type="radio" value="0" {:if $mle['ucini']['enabled'] == false:}checked{:/if:} /> {:$lang['page']['field']['enabled'][2]:}
+				</td>
+				<td class="field">{:$lang['page']['field']['enabled'][3]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['connect'][0]:}</td>
+				<td>
+					<select name="connect" class="select rounded">
+					<option value="mysql"{:if $mle['ucini']['connect'] == 'mysql':} selected="selected"{:/if:}>{:$lang['page']['field']['connect'][1]:}</option>
+					<option value=""{:if $mle['ucini']['connect'] == '':} selected="selected"{:/if:}>{:$lang['page']['field']['connect'][2]:}</option>
+					</select>
+				</td>
+				<td class="field">{:$lang['page']['field']['connect'][3]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['dbhost'][0]:}</td>
+				<td>
+					<input name="dbhost" type="text" value="{:$mle['ucini']['dbhost']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['dbhost'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['dbport'][0]:}</td>
+				<td>
+					<input name="dbport" type="text" value="{:$mle['ucini']['dbport']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['dbport'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['dbuser'][0]:}</td>
+				<td>
+					<input name="dbuser" type="text" value="{:$mle['ucini']['dbuser']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['dbuser'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['dbpw'][0]:}</td>
+				<td>
+					<input name="dbpw" type="password" value="{:$mle['ucini']['dbpw']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['dbpw'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['dbname'][0]:}</td>
+				<td>
+					<input name="dbname" type="text" value="{:$mle['ucini']['dbname']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['dbname'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['dbtablepre'][0]:}</td>
+				<td>
+					<input name="dbtablepre" type="text" value="{:$mle['ucini']['dbtablepre']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['dbtablepre'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['key'][0]:}</td>
+				<td>
+					<input name="key" type="text" value="{:$mle['ucini']['key']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['key'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['api'][0]:}</td>
+				<td>
+					<input name="api" type="text" value="{:$mle['ucini']['api']:}" size="30" class="input rounded" />
+					<a href="{:$mle['ucini']['api']:}" target="_blank" title="{:$lang['page']['field']['api'][2]:}"><img src="../inc/templates/manage/images/operation/world_link.png" width="16" height="16" /></a>
+				</td>
+				<td class="field">{:$lang['page']['field']['api'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['ip'][0]:}</td>
+				<td>
+					<input name="ip" type="text" value="{:$mle['ucini']['ip']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['ip'][1]:}</td>
+			</tr>
+			<tr>
+				<td class="name">{:$lang['page']['field']['appid'][0]:}</td>
+				<td>
+					<input name="appid" type="text" value="{:$mle['ucini']['appid']:}" size="30" class="input rounded" />
+				</td>
+				<td class="field">{:$lang['page']['field']['appid'][1]:}</td>
+			</tr>
+			
+		</table>
+		<table class="table top_line">
+			<tr>
+				<td align="right" height="60"><a id="submit" class="submit" href="#">{:$lang['common']['submit']:}</a></td>
+				<td width="80"><input type="hidden" name="action" value="{:$mle['action']:}" /></td>
+				<td><a class="submit reset" href="javascript:form.reset();">{:$lang['common']['reset']:}</a></td>
+			</tr>
+		</table>		
+		</form>
+	</div>
+	{:include file='component_footer.dwt':}
+</div>
+</body>
+</html>
