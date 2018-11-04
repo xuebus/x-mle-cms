@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c6f4638-92b1-41a7-ae21-6e6b8e79813d" name="Default Changelist" comment="" />
+    <list default="true" id="5c6f4638-92b1-41a7-ae21-6e6b8e79813d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/config/globals.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/config/globals.config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/00a1c8210d5710d2a9a60588f8979d7751be0672.file.download.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/00a1c8210d5710d2a9a60588f8979d7751be0672.file.download.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/04a3992ff1283982896d1bb8eeb26b512266d9f6.file.component_page_style.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/04a3992ff1283982896d1bb8eeb26b512266d9f6.file.component_page_style.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/14d71935c06e570e06b75b4b6f760797585f48a7.file.about_view.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/14d71935c06e570e06b75b4b6f760797585f48a7.file.about_view.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/1c8bbd0e7bbdbbd99983b69cc4c30244e80789ed.file.about_channel.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/1c8bbd0e7bbdbbd99983b69cc4c30244e80789ed.file.about_channel.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/1de1de28b46f729872ac609956370f13b8b75f5c.file.detail.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/1de1de28b46f729872ac609956370f13b8b75f5c.file.detail.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/20f40f734fd1963fc69730eed0c142c41e2d4e58.file.list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/20f40f734fd1963fc69730eed0c142c41e2d4e58.file.list.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/35df49faf93dcdd44be22418aa58f3874d2d24ed.file.soft.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/35df49faf93dcdd44be22418aa58f3874d2d24ed.file.soft.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/3d8c6b2f99603215d6b55d9ef1a632e36752da1e.file.photo.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/3d8c6b2f99603215d6b55d9ef1a632e36752da1e.file.photo.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/3ee823321df039e7cbbac6225a0474d7f0f72fc2.file.component_footer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/3ee823321df039e7cbbac6225a0474d7f0f72fc2.file.component_footer.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/741f669ee567c8071e25729b4b04d22f0b0f19fe.file.index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/741f669ee567c8071e25729b4b04d22f0b0f19fe.file.index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/75ff895cad9702b810305ddc679a92ff518c997d.file.article.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/75ff895cad9702b810305ddc679a92ff518c997d.file.article.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/9428c661ee882f9ff0354c347c10e199ec7e07c1.file.view.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/9428c661ee882f9ff0354c347c10e199ec7e07c1.file.view.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/9580bf323b676512d92a6aea03b9e04c14e513be.file.component_article.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/9580bf323b676512d92a6aea03b9e04c14e513be.file.component_article.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/bc0e1bbda61125a9dd42967f6adc006fbf13c614.file.login.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/bc0e1bbda61125a9dd42967f6adc006fbf13c614.file.login.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/c7750fe74b9146758227906a0a69ede72cea8e2d.file.guestbook.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/c7750fe74b9146758227906a0a69ede72cea8e2d.file.guestbook.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/ca8da552d5f99fc1728248f68dfef3ebd8f1c81b.file.down.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/ca8da552d5f99fc1728248f68dfef3ebd8f1c81b.file.down.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/cf1340e2c2379966e3c56bba52f2033670dc470d.file.register.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/cf1340e2c2379966e3c56bba52f2033670dc470d.file.register.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/d1ebbbaa5633fd7ec30da0b57017d4e9b54f261d.file.show.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/d1ebbbaa5633fd7ec30da0b57017d4e9b54f261d.file.show.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/d4fca2935fb28207c83643af7431271fb39c2a6a.file.component_header.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/d4fca2935fb28207c83643af7431271fb39c2a6a.file.component_header.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/ecdfcb8a905747acdd8b4945661745e079a6045e.file.feedback.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/ecdfcb8a905747acdd8b4945661745e079a6045e.file.feedback.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/ed4f339ed514d1591d0a10729be01cabd0a1f2cd.file.component_product.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/ed4f339ed514d1591d0a10729be01cabd0a1f2cd.file.component_product.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/f0b4f52c740a6a2031a020b9a92b11c7e0ed150d.file.product.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/f0b4f52c740a6a2031a020b9a92b11c7e0ed150d.file.product.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_frontend/fe3fe9c794f2efbd978b620a621fd5d43d987546.file.category.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_frontend/fe3fe9c794f2efbd978b620a621fd5d43d987546.file.category.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/11024b5caf8df88f1079070e959383a9338c6f12.file.html_make.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/11024b5caf8df88f1079070e959383a9338c6f12.file.html_make.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/28ce4937016cb5ffa71c1f2e55f7960c897cb9e3.file.ad_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/28ce4937016cb5ffa71c1f2e55f7960c897cb9e3.file.ad_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/30645c57673d79d75b135d451e1d45919f3362fd.file.download_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/30645c57673d79d75b135d451e1d45919f3362fd.file.download_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/4d8c39db85bb8b22e51cc54cb1033f8271b44a0a.file.index.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/4d8c39db85bb8b22e51cc54cb1033f8271b44a0a.file.index.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/4f29de5940722bd38ac4acb7b53916106d2e260f.file.guestbook_reply.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/4f29de5940722bd38ac4acb7b53916106d2e260f.file.guestbook_reply.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/633eb2d295d44f10c33bf0adfd4e7ac589ce4adb.file.article_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/633eb2d295d44f10c33bf0adfd4e7ac589ce4adb.file.article_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/65a215bbd359498ad5e0f70d6a0b1e940654792e.file.set_ucenter.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/65a215bbd359498ad5e0f70d6a0b1e940654792e.file.set_ucenter.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/6a935ef5e62dc09e04799498bf768e99d94c0474.file.component_header.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/6a935ef5e62dc09e04799498bf768e99d94c0474.file.component_header.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/76847c91e8d29b4e2f7fd3256ed1d74323506d98.file.log.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/76847c91e8d29b4e2f7fd3256ed1d74323506d98.file.log.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/7939554d55d2f016e97e1b2a805ed245ca33019a.file.set_captcha.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/7939554d55d2f016e97e1b2a805ed245ca33019a.file.set_captcha.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/7c27c6be2761559af018daa341fa2c407ec709eb.file.component_footer.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/7c27c6be2761559af018daa341fa2c407ec709eb.file.component_footer.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/88cd7a3a8951998bc03c32671df61257c4a37666.file.member_transactions.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/88cd7a3a8951998bc03c32671df61257c4a37666.file.member_transactions.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/8d99e6387d252d163361686324c6b8c40c6d752b.file.set_web.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/8d99e6387d252d163361686324c6b8c40c6d752b.file.set_web.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/9fa635d7088d0aa528026afa4ac7c069fd0a0f08.file.set_file.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/9fa635d7088d0aa528026afa4ac7c069fd0a0f08.file.set_file.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/a6f2d22a1411c2b676f97de43a3a5fdcb5d07355.file.category_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/a6f2d22a1411c2b676f97de43a3a5fdcb5d07355.file.category_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/a84c86d7edc42c3c5f9aa1525696b65c235a9998.file.picture_update.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/a84c86d7edc42c3c5f9aa1525696b65c235a9998.file.picture_update.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/b3daff1bb8081d48b218dabb15df7c4bb3ea04c4.file.guestbook_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/b3daff1bb8081d48b218dabb15df7c4bb3ea04c4.file.guestbook_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/b9b725b4156ee2e1eda6104a69dcd2f9248e2be8.file.template_manag.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/b9b725b4156ee2e1eda6104a69dcd2f9248e2be8.file.template_manag.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/ba66d404bfd39a0b3e1c18cf0b9e79ca470cc4fd.file.product_update.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/ba66d404bfd39a0b3e1c18cf0b9e79ca470cc4fd.file.product_update.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/c7f766b5de0faed5e5959e6963dfb2d86aee7c15.file.links_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/c7f766b5de0faed5e5959e6963dfb2d86aee7c15.file.links_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/c8661e7d9280464ca9adc8d6b351e7da7f69ce42.file.component_menu.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/c8661e7d9280464ca9adc8d6b351e7da7f69ce42.file.component_menu.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/ca5872e0a9344f68d279691830e6ab61aa032f1b.file.set_member.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/ca5872e0a9344f68d279691830e6ab61aa032f1b.file.set_member.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/d80dd3595265266d9e333c9854d72b28056d7856.file.login.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/d80dd3595265266d9e333c9854d72b28056d7856.file.login.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/de0b378b9096d1ea0315e033363207e298f2f356.file.product_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/de0b378b9096d1ea0315e033363207e298f2f356.file.product_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/deb788866361e54f4a154b35530cc1a13f7babb1.file.set_globals.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/deb788866361e54f4a154b35530cc1a13f7babb1.file.set_globals.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/dfb04aee225fce0ff893635039f3c23d70ef58a8.file.module_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/dfb04aee225fce0ff893635039f3c23d70ef58a8.file.module_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/e6f8e55172dd928e59504c7df30206518085dbdb.file.picture_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/e6f8e55172dd928e59504c7df30206518085dbdb.file.picture_manage.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/ea2d49f34ea6b99dcc3d7e4364c53335c73b990a.file.template_update.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/ea2d49f34ea6b99dcc3d7e4364c53335c73b990a.file.template_update.dwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/tmp/translation_manage/f90649ce1565c21c9febdb46c7d335376281963f.file.channel_manage.dwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/tmp/translation_manage/f90649ce1565c21c9febdb46c7d335376281963f.file.channel_manage.dwt.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +85,14 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1179629789">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf />
@@ -54,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -65,11 +129,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -96,23 +160,19 @@
       <option name="presentableId" value="Default" />
       <updated>1541303766581</updated>
       <workItem from="1541303768089" duration="135000" />
+      <workItem from="1541305499839" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135000" />
+    <option name="totallyTimeSpent" value="472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24320242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24697885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="1.0" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -120,10 +180,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33658537" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.0.9, created on 2018-10-31 22:50:06
-         compiled from "D:/soft/wamp/www/upload/inc/templates/frontend/default/product.tpl" */ ?>
+         compiled from "D:/soft/wamp/www/x-mle-cms/inc/templates/frontend/default/product.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:304845bd9c11ef35ad4-42677553%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f0b4f52c740a6a2031a020b9a92b11c7e0ed150d' => 
     array (
-      0 => 'D:/soft/wamp/www/upload/inc/templates/frontend/default/product.tpl',
+      0 => 'D:/soft/wamp/www/x-mle-cms/inc/templates/frontend/default/product.tpl',
       1 => 1346786678,
       2 => 'file',
     ),

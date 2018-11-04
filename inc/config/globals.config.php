@@ -3,7 +3,7 @@ defined('MLEROOT') or die('Access Denied.');
 $config = array (
   'debugging' => '1',
   'static' => '1',
-  'url' => 'http://localhost/upload/',
+  'url' => 'http://localhost/x-mle-cms/',
   'home' => 'index.php',
   'lang_total' => '2',
   'lang_default' => '1',
