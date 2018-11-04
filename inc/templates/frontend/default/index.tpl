@@ -106,8 +106,7 @@ $(function(){
 		<!-- 其它图片链接 -->
 		<div>
 			<ol class="other">
-				<a href="{:misc::get_url('guestbook'):}"><img src="{:$web['path']:}images/homeandleft_guestbook{:$web['lang']:}.png" width="100" height="50" /></a> &nbsp;
-				<a href="{:misc::get_url('feedback'):}"><img src="{:$web['path']:}images/homeandleft_service{:$web['lang']:}.png" width="100" height="50" /></a>
+				<a href="{:misc::get_url('guestbook'):}"><img src="{:$web['path']:}images/homeandleft_guestbook{:$web['lang']:}.png" width="100" height="50" /></a>&nbsp;<a href="{:misc::get_url('feedback'):}"><img src="{:$web['path']:}images/homeandleft_service{:$web['lang']:}.png" width="100" height="50" /></a>
 			</ol>
 		</div>
 	</div>
